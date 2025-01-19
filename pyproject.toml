@@ -1,0 +1,21 @@
+[project]
+name = "weight-training-app"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "uycuhnt2467",email = "uycuhnt2467@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi (>=0.115.6,<0.116.0)",
+    "uvicorn (>=0.34.0,<0.35.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+start = "weight_training_app.main:start_server"

@@ -1,0 +1,9 @@
+# .gitignore
+__pycache__/
+*.pyc
+*.pyo
+venv/
+.env
+.mypy_cache/
+pytest_cache/
+poetry.lock
