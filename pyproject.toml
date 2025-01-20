@@ -7,10 +7,6 @@ authors = [
 ]
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = [
-    "fastapi (>=0.115.6,<0.116.0)",
-    "uvicorn (>=0.34.0,<0.35.0)"
-]
 
 
 [build-system]
@@ -19,3 +15,15 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
 start = "weight_training_app.main:start_server"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.109.0"
+uvicorn = "^0.27.0"
+sqlalchemy = "^2.0.25"
+psycopg2-binary = "^2.9.9"
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+python-multipart = "^0.0.6"
+python-dotenv = "^1.0.0"
+email-validator = "^2.1.0.post1"
